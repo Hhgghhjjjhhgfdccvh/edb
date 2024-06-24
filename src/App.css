@@ -1,38 +1,743 @@
-.App {
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: block;
+    text-align: center;
+}
+.headi{
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+}
+.caption{
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.my{
+    width: 200px;
+}
+.abou1{
+    font-family: 'Cinzel', serif;
+}
+.Para1{
+    font-family: 'Cinzel', serif;
+    font-weight: 200;
+}
+/* Styles for the outer container */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  
+  /* Styles for the content section */
+  .content {
+    text-align: center;
+    margin-bottom: 20px;
+    
+    color: #3295dc;
+  }
+  
+  .contribute {
+    font-size: 26px;
+    color: #4c5052;
+    
+    
+
+  }
+  
+  .para {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Styles for the form section */
+  .formss {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styles for form elements */
+  .div1,
+  .div2,
+  .div3 {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #4c5052;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .mo{
+    width: 70px;
+  }
+  .poto{
+    text-align: center;
+  }
+
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .section1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+  }
+  .section2{
+   
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cont3{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .id3,.id2,.insta,.faceb,.adre,.sss{
+    
+    color:#F1EFEF;
+    font-family:'Ysabeau Infant', sans-serif;
+    font-size: 30px;
+  }
+  .adre,.sss{
+    font-family:'Ysabeau Infant', sans-serif;
+    font-size: 30px;
+  }
+  .id2{
+    padding-bottom: 20px;
+    
+  }
+  .cont5{
+    display: flex;
+    flex-direction: column;
+  }
+  .icon{
+    display: flex;
+    flex-direction: column;
+  }
+  .cont4{
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+  }
+  .cont6{
+    padding-left: 60px;
+  }
+  .section3{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;  
+    column-gap: 10px; 
+  }
+  .se{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  .poto1,.poto2,.poto3{
+   padding: 20px;
+
+  }
+  .my{
+    width:300px;
+    height: 200px;
+    border-radius: 10px;
+    filter: contrast();
+  }
+  .part1{
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .part1{padding: 5px;
+}
+  .head,.message{
+    font-family: 'Ysabeau Infant', sans-serif;
+    color: rgba(234, 240, 246, 0.8);
+  }
+  .para12{
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgba(234, 240, 246, 0.8);
+  }
+  .teamm{
+    font-family: 'Ysabeau Infant', sans-serif;
+    
+  }
+  .part2{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    padding-left: 80px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    color: rgba(234, 240, 246, 0.8);
+   
+  }  
+  .fy,.ty,.sy{
+    font-family: 'Ysabeau Infant', sans-serif;
+    color: black;
+    font-weight: 600;
+  }
+
+  .part21,.part22{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    column-gap: 200px;
+    color: rgba(234, 240, 246, 0.8);
+  }
+  .team1,.team2,.team3,.team4,.team5{
+    padding: 20px;
+  }
+  
+  
+  .App {
+    text-align: center;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  .App-header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Add styles for the compressed header elements */
+  .App.sidebar-open .App-header {
+    padding: 10px;
+  }
+  
+  .logo.compressed img {
+    max-width: 50px;
+    height: auto;
+  }
+  .imgg{
+    width: 80px;
+   
+  }
+  .k2{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .k5{
+    margin-left: 800px;
+  }
+  .search-bar.compressed {
+    flex-grow: 1;
+    transition: flex-grow 0.3s ease-in-out;
+  }
+  .se{
+    padding: 10px;
+    align-items: center;
+  }
+  
+  /* Rest of your CSS styles */
+  
+  .sidebar-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .pre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+  /* RandomPhotoSlider.css */
+
+.random-photo-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.slide {
+  max-width: 100%;
+  height: auto;
+  animation: slide 8s ease infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(200);
+  }
+  100% {
+    transform: translateX(300);
+  }
+}
+
+  .faclty1{
+    padding-left: 40px;
+    text-align: center;
+    
+  }
+  .faclty{
+    color: #fff;
+    font-family: 'Ysabeau Infant', sans-serif;
+
+
+  }
+  .faclty2{
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+  }
+  .message{padding-right: 80px;}
+  .regard,.haa,.ha,.btna{
+    color: #fff;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 20px;
+
+  }
+  .haaa,.aaa{
+    font-family: 'Ysabeau Infant', sans-serif;
+  }
+  .aaa{
+    font-size: 30px;
+  }
+  .ha{
+    font-size: 50px;
+  }
+  /* App.css */
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style the search bar container */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Style the input field */
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+/* Style the search button */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the search results list */
+.search-results {
+  list-style: none;
+  padding: 0;
+}
+
+.search-results li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  height: 60px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-left {
+  text-align: left;
+  font-family:'Ysabeau Infant', sans-serif;
+    font-size: 20px;
+}
+.rights{
+  font-family:'Ysabeau Infant', sans-serif;
+    font-size: 20px;
+}
+
+.footer-right {
+  text-align: right;
+}
+.noti{
+  color: #fff;
+  margin-left: 5px;
+
+}
+.figuree{
+  flex: 1 0 200px;
+  width: 150px; height: 350px;
+  margin: 12px;
+  box-shadow: 0px 3px 8px #000;
+  transition: all 300ms ease-in-out;
+}
+.figuree:hover{
+  box-shadow: 0px 10px 40px ;
+  width: 202px;height: 303px;
+}
+
+.social-links {
+  display:flex;
+  margin-top: 10px;
+  align-items: center;
+  margin-right: 20px;
+  
+}
+
+.social-link {
+  display:flex;
+  align-items: center;
+  margin-left: 800px;
+  
+}
+
+
+.footer-bottom {
+  margin-top: 20px;
+
+}
+.wrapper{
+  overflow-x: auto;
+  min-width: 250px;
+  height: 1000px;
+ 
+}
+.wrapper.item{
+  width: 300px;
+  height: 350px;
+}
+.wrapper::-webkit-scrollbar{
+  width: 0;
+}
+.wrapper::-webkit-scrollbar-button{
+  color: #0056b3;
+  border: 2px;
+}
+.head1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(34, 34, 34);
+  font-size: "200px";
+  font-family:'Ysabeau Infant', sans-serif;
+
+}
+.advisor{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #232424;
+}
+.adv1{
+  margin-left: 90px;
+  margin-top: 50px;
+  font-family:'Ysabeau Infant', sans-serif;
+  color: #fff;
+}
+.imgf{
+  width: 250px;
+  margin-top: 40px;
+  margin-left: 250px;
+  opacity: 0.8;
+  margin-right: 30px;
+}
+/* Mem.css */
+
+/* Styles for the top-level container */
+.first {
+  background-color: #f5f5f5; /* Set your desired background color */
+  font-family: 'Arial', sans-serif; /* Set your desired font */
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styles for the 'final' section */
+.final {
+ /* Add your background image URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styles for the 'wrapper' containing the items */
+.wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles for the 'item' elements */
+.item {
+  background-color: rgb(255, 255, 255); /* Set your desired background color */
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  transition: transform 0.2s ease-in-out;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Add hover animation for 'item' elements */
+.item:hover {
+  transform: scale(1.05);
 }
+
+/* Styles for 'head1' */
+.head1 {
+  font-size: 24px;
+  color: #333; /* Set your desired text color */
+  margin-top: 20px;
+}
+.figuree{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.acar{
+width: 100px;
+border-radius: 50%;
+}
+.abott{
+  margin: 15px;
+  
+}
+
+.img-wrapper
+{
+	width: 300px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+.img-wrapper:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 180%;
+	height: 100%;
+	width: 100%;
+	background: rgba(255,255,255,.3);
+	z-index: 1;
+	transform: skew(45deg);
+	transition: .5s;
+}
+
+.img-wrapper:hover:before
+{
+	left: -180%;
+}
+
+.img-wrapper img
+{
+	height: 400px;
+	width: 300px;
+	filter: grayscale(100%);
+	transition: 2s;
+}
+.img-wrapper:hover img
+{
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+
+.img-wrapper h2
+{
+	background: tomato;
+	font-family: Poppins;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 10px 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	transform: perspective(400px) rotateY(90deg);
+	transform-origin: right;
+	transition: 1s;
+}
+
+.img-wrapper:hover h2
+{
+	transform: perspective(400px) rotateY(0deg);
+}
+
+.img-wrapper ul
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li
+{
+	background: #333;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	transform: perspective(800px) rotateY(90deg);
+	transition: .5s;
+	transform-origin: left;
+}
+
+.img-wrapper:hover ul li
+{
+	transform: perspective(800px) rotateY(0deg);
+}
+
+.img-wrapper:hover ul li:nth-child(1)
+{
+	transition-delay: .2s;
+}
+
+.img-wrapper:hover ul li:nth-child(2)
+{
+	transition-delay: .6s;
+}
+
+.img-wrapper:hover ul li:nth-child(3)
+{
+	transition-delay: .8s;
+}
+
+.img-wrapper:hover ul li:nth-child(4)
+{
+	transition-delay: 1s;
+}
+
+.img-wrapper ul li a
+{
+	color: tomato;
+	background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li i
+{
+	color: tomato;
+	background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li i:hover
+{
+	color: #fff;
+	background: rgba(255,255,255,0);
+}
+
+/* Add any additional CSS styles, animations, and fonts as needed */
+
+
+
+
+
+
+  
